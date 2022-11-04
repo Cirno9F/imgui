@@ -20,6 +20,11 @@ project "ImGui"
 		"imstb_truetype.h",
 	}
 
+    defines
+    {
+        "IMGUI_API=_declspec(dllexport)"
+    }
+
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
